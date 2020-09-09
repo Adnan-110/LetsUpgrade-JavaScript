@@ -53,6 +53,6 @@ for (let i = 0; i < Student.length; i++) {
 console.log("Student who lives in India :");
 for (let i = 0; i < Student.length; i++) {
   if (Student[i].country == "India") {
-    console.log - Student[i];
+    console.log(Student[i]);
   }
 }
