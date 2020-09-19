@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question_1</title>
+    <style>
+      body {
+        background-color: rgb(145, 146, 182);
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .Csk {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        width: 80%;
+        background-color: yellow;
+        margin-left: 10%;
+        margin-top: 100px;
+        padding: 20px;
+        display: block;
+        text-align: center;
+        border-color: rgb(8, 11, 219);
+        border-width: 2px;
+        border-style: solid;
+        border-collapse: collapse;
+      }
+      .table {
+        margin-top: 50px;
+        width: 100%;
+        border-color: rgb(8, 11, 219);
+      }
+      th,
+      td {
+        height: 40px;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+        border-collapse: collapse;
+        border-color: rgb(8, 11, 219);
+      }
+      button {
+        padding: 10px;
+        border-color: rgb(8, 11, 219);
+      }
+      .search {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+
+      input {
+        border-color: rgb(8, 11, 219);
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
+        height: 40px;
+        text-indent: 20px;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Csk">
+      <h1
+        class="heading"
+        style="text-align: center; margin-top: 40px; color: rgb(8, 11, 219)"
+      >
+        <i>Chennai Super Kings</i>
+      </h1>
+
+      <div class="search">
+        <input
+          type="text"
+          id="searchName"
+          placeholder="Search Name"
+          onkeyup="searchByname()"
+        />
+        <input
+          type="text"
+          id="searchCity"
+          placeholder="Search City"
+          onkeyup="searchBycity()"
+        />
+      </div>
+      <table border="3" class="table">
+        <thead>
+          <tr>
+            <th style="font-size: 25px">Sr no</th>
+            <th style="font-size: 25px">Name</th>
+            <th style="font-size: 25px">Age</th>
+            <th style="font-size: 25px">City</th>
+            <th style="font-size: 25px">Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="tdata" id="tdata"></tbody>
+      </table>
+    </div>
+    <script src="Question_1.js"></script>
+  </body>
+</html>
